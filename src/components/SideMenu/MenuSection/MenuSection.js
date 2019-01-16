@@ -1,30 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import classes from './MenuSection.module.css';
+import { NavLink, withRouter } from 'react-router-dom';
+import MenuItems from './MenuItems/MenuItems';
 
 const menuSection = (props) => {
-    const items = props.section.items.map(el => {
-        return (
-            <NavLink
-                activeClassName={classes.active}
-                to={`${el.link}`}>
-                <p>
-                    {el.name}
-                </p>
-            </NavLink>
-        )
-    })
-
+    console.log(props)
     return (
         <div>
             <h3>
                 {props.section.title.name}
             </h3>
-            <div>
-                {items}
-            </div>
+            <MenuItems 
+                items={props.section.items} 
+                title={props.section.title.name}/>
         </div>
     )
 }
 
-export default menuSection;
+export default withRouter(menuSection);
