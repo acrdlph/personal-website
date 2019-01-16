@@ -1,0 +1,14 @@
+.film {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: top;
+}
+
+.film__description {
+    width: 340px;
+}
+
+.film__title {
+    margin-top: 0;
+    text-decoration-line: underline;
+}

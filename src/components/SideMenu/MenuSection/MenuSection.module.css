@@ -1,0 +1,12 @@
+
+a {
+    text-decoration: none;
+    color: black;
+  }
+
+a:hover, 
+a:active,
+.active {
+      color: rgb(4, 4, 83);
+    }
+  
