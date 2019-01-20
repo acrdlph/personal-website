@@ -3,6 +3,7 @@ import classes from './Stories.module.css'
 import SideMenu from '../SideMenu/SideMenu';
 import { Route, Switch } from 'react-router-dom';
 import Films from './Films/Films';
+import Exclusive from './Films/Film/Exclusive';
 
 const menuItems = [
   {
@@ -13,19 +14,19 @@ const menuItems = [
     items: [
       {
         name: 'Infiniti',
-        link: 184543907
+        link: 249237368
       },
       {
         name: 'Better Life',
-        link: 2
+        link: 184543907
       },
       {
         name: 'El Nacimiento del Rio Hacha',
-        link: 3
+        link: 164152908
       },
       {
-        name: 'Rs.50',
-        id: 4
+        name: 'Rs. 50',
+        link: 150431419
       }
     ]
   },
@@ -51,13 +52,13 @@ const menuItems = [
   },
   {
     title: {
-      name: 'LiveStream',
+      name: 'Backstage',
       titleLink: ''
     },
     items: [
       {
-        name: 'Twitch',
-        id: 4
+        name: 'Exclusive Premium Content',
+        link: 'exclusive'
       }
     ]
   }
@@ -67,59 +68,9 @@ const menuItems = [
 const stories = (props) => (
   <React.Fragment>
     <SideMenu items={menuItems} />
+    <Route path="/stories/backstage/exclusive" exact component={Exclusive}/>
     <Route path="/stories/film/:filmId" component={Films} />
   </React.Fragment>
-  //   <div>
-
-  //     <div>
-  //       <h3>
-  //         Film
-  //       </h3>
-  //       <div>
-  //         <p>
-  //           infiniti
-  //         </p>
-  //         <p>
-  //           better life
-  //         </p>
-  //         <p>
-  //           El Nacimiento <br/>del Rio Hacha
-  //         </p>
-  //         <p>
-  //           Rs. 50
-  //         </p>
-  //       </div>
-  //     </div>
-
-  //     <div>
-  //       <h3>
-  //         Youtube
-  // </h3>
-  //       <div>
-  //         <p>
-  //           Season 2
-  //   </p>
-  //   <p>
-  //           Wonderful Days
-  //   </p>
-  //   <p>
-  //           Challenge Challenge
-  //   </p>
-  //       </div>
-  //     </div>
-
-  //     <div>
-  //       <h3>
-  //         Livestream
-  // </h3>
-  //       <div>
-  //         <p>
-  //           hi this is me.
-  //   </p>
-  //       </div>
-  //     </div>
-
-  //   </div>
 )
 
 export default stories;

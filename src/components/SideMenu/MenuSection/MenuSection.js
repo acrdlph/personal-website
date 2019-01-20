@@ -4,9 +4,10 @@ import MenuItems from './MenuItems/MenuItems';
 
 const menuSection = (props) => {
     console.log(props)
+    const underline = props.section.title.name === "Backstage";
     return (
         <div>
-            <h3>
+            <h3 style={underline ? {textDecoration: 'underline', textDecorationStyle: 'double', color: '#2424d0'} : null}>
                 {props.section.title.name}
             </h3>
             <MenuItems 
