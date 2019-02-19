@@ -39,6 +39,12 @@ getVirtualParams = (m, n) => {
     return (
       <React.Fragment>       
         <NavBar />
+        <div style={{background: 'yellow', display: 'flex', fontSize: '60px', fontWeight: 'bold', paddingTop: '30px', paddingBottom: '20px', textAlign: 'center'}}>
+        <p style={{ margin: 'auto'}}>
+          UNDER CONSTRUCTION 🚧
+        </p>
+        </div>
+
         <div className={classes.main}>
         <Switch>
           <Route path="/about" exact component={About} />
