@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Meet.module.css'
 
 const meet = (props) => (
-    <div>
+  <div>
 
     <div>
       <h3>
@@ -10,7 +10,7 @@ const meet = (props) => (
       </h3>
       <div>
         <p>
-          hi this is me.
+          hi.
         </p>
       </div>
     </div>
@@ -21,7 +21,7 @@ const meet = (props) => (
       </h3>
       <div>
         <p>
-          hi this is me.
+          hi.
         </p>
       </div>
     </div>
@@ -33,13 +33,19 @@ const meet = (props) => (
       </h3>
       <div>
         <p>
-          hi this is me.
+          hi.
         </p>
       </div>
     </div>
 
-
+    <div style={{ position: 'fixed', bottom: '10px', width: '98%', background: 'yellow', display: 'flex', fontSize: '40px', fontWeight: 'bold', paddingTop: '20px', paddingBottom: '10px', textAlign: 'center' }}>
+      <p style={{ margin: 'auto' }}>
+        UNDER CONSTRUCTION 🚧
+        </p>
     </div>
+
+
+  </div>
 
 )
 

@@ -17,7 +17,7 @@
 }
 
 .name__socials a:hover {
-    color: rgb(4, 4, 83);
+    color: yellow;
 }
 
 .nav__items {
@@ -41,7 +41,9 @@
 .nav__item a:hover, 
 .nav__item a:active,
 .nav__item .active {
-    color: rgb(4, 4, 83);
+    background: yellow;
+    color: black;
+    font-style: normal;
   }
 
 .bar {
