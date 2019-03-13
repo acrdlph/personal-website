@@ -22,6 +22,10 @@ const menuItems = [
       {
         name: 'Better Life',
         link: 184543907
+      },      
+      {
+        name: 'How to Build a Startup in 20 hours',
+        link: 1
       },
       {
         name: 'Ocean Drive',
@@ -51,6 +55,14 @@ const menuItems = [
       {
         name: 'Nam',
         link: 167770804
+      },
+      {
+        name: `BERLIN A PARIS DE L'AUTO-STOP`,
+        link: 127055578
+      },
+      {
+        name: `Eat Sleep Rave`,
+        link: 101383540
       }
     ]
   },
@@ -62,23 +74,23 @@ const menuItems = [
     items: [
       {
         name: 'Season 2',
-        id: 4
+        link: 'season2'
       },
       {
         name: 'Public Transport 3.0',
-        id: 4
+        link: 'publictransport30'
       },
       {
         name: 'Challenge Challenge',
-        id: 5
+        link: 'challengechallenge'
       },
       {
         name: 'What A Wonderful Day',
-        id: 6
+        link: 'whatawonderfulday'
       },
       {
         name: 'Off-day',
-        id: 7
+        link: 'offday'
       }
     ]
   },
@@ -103,7 +115,7 @@ const stories = (props) => (
     <Route path="/stories/backstage/exclusive" exact component={Exclusive}/>
     <Route path="/stories/film" exact component={ShowReel} />
     <Route path="/stories/film/:filmId" exact component={Films} />
-    <Route path="/stories/youtube/:filmId" exact component={YouTube} />
+    <Route path="/stories/youtube/:seasonId" exact component={YouTube} />
   </React.Fragment>
 )
 
