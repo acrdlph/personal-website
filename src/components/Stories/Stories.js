@@ -3,6 +3,7 @@ import classes from './Stories.module.css'
 import SideMenu from '../SideMenu/SideMenu';
 import { Route, Switch } from 'react-router-dom';
 import Films from './Films/Films';
+import YouTube from './YouTube/YouTube';
 import Exclusive from './Films/Film/Exclusive';
 import ShowReel from './Films/ShowReel';
 
@@ -64,12 +65,20 @@ const menuItems = [
         id: 4
       },
       {
-        name: 'What A Wonderful Day',
-        id: 5
+        name: 'Public Transport 3.0',
+        id: 4
       },
       {
         name: 'Challenge Challenge',
+        id: 5
+      },
+      {
+        name: 'What A Wonderful Day',
         id: 6
+      },
+      {
+        name: 'Off-day',
+        id: 7
       }
     ]
   },
@@ -94,6 +103,7 @@ const stories = (props) => (
     <Route path="/stories/backstage/exclusive" exact component={Exclusive}/>
     <Route path="/stories/film" exact component={ShowReel} />
     <Route path="/stories/film/:filmId" exact component={Films} />
+    <Route path="/stories/youtube/:filmId" exact component={YouTube} />
   </React.Fragment>
 )
 

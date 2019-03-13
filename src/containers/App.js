@@ -36,9 +36,6 @@ class App extends Component {
           <Route path="/software" component={Software} />
           <Route path="/meet" exact component={Meet} />
         </Switch>
-        <p>
-          {this.getVirtualParams(1,1)}
-        </p>
         </div>
       </React.Fragment>
     );
