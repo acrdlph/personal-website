@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css?family=Sarabun|Black+Han+Sans|Candal|Wendy+One');
+
+
 .film {
     display: flex;
     justify-content: center;
@@ -12,4 +15,14 @@
 .film__title {
     margin-top: 0;
     text-decoration-line: underline;
+}
+
+.chapter__title {
+    /* font-family: 'Wendy One', sans-serif; */
+    /* font-family: 'Black Han Sans', sans-serif; */
+    font-family: 'Candal', sans-serif;
+}
+
+.chapter__text {
+    font-family: 'Sarabun', sans-serif;
 }

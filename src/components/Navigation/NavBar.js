@@ -71,7 +71,7 @@ const navBar = (props) => (
                     <NavLink
                         activeClassName={classes.active}
                         to="/token">
-                        Token
+                        Markets
                     </NavLink>
                 </li>
                 <li className={classes.nav__item}>

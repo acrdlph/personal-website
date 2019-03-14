@@ -132,8 +132,8 @@ const chapter = (props) => {
 
   return (
     <div>
-      <h1>{chapter.title}</h1>
-      <p> {chapter.text} </p>
+      <h1 className={classes.chapter__title}>{chapter.title}</h1>
+      <div className={classes.chapter__text}> {chapter.text} </div>
     </div>
   )
 }
